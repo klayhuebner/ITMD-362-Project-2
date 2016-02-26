@@ -125,9 +125,8 @@ table {
 	padding-top: 2.5%;
 	padding-left: 10%;
 	
+	
 }
-
-
 
 .flexVA div.Mercer {
 	flex: 0 1 auto;
@@ -212,9 +211,54 @@ table {
 	border-radius: 50px;
 }
 
-/*
-Placeholder
-*/
+.flexMusic {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: baseline;
+	padding-top: 2.5%;
+	padding-left: 15%;
+	padding-right: 15%;	
+}
+
+.flexMusic div.Bass {
+	flex: 0 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+}
+
+.flexMusic div.BackOn {
+	flex: 0 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+
+}
+
+#Bass img{
+	width: 85%;
+	height: auto;
+}
+
+#BackOn img {
+	width: 100%;
+	height: auto;
+	
+}
+
+#Bass p {
+	width: 85%;
+	color: white;
+	font-size: 1.5em;
+}
+
+#BackOn p {
+	width: 100%;
+	color: white;
+	font-size: 1.5em;
+}
 
 #Industry {
 	position: relative;
@@ -297,15 +341,13 @@ Placeholder
 	align-content: center;
 	align-items: baseline;
 	padding-top: 2.5%;
-	padding-left: 10%;
-	
 }
 
 .flexVa div.Mercer {
 	flex: 0 1 auto;
 	align-self: auto;
-	width: 25%;
-	height: auto;
+	min-width: 0;
+	min-height: auto;	
 }
 
 .flexVA div.Marisha {
@@ -364,6 +406,58 @@ Placeholder
 
 #Solusod p {
 	width: 75%;
+	color: white;
+	font-size: 1.1em;
+}
+
+.flexMusic {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: baseline;
+	padding-top: 2.5%;
+	
+		
+}
+
+.flexMusic div.Bass {
+	flex: 0 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;	
+}
+
+.flexMusic div.BackOn {
+	flex: 0 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+
+}
+
+#Bass img{
+	width: 100%;
+	height: auto;
+}
+
+#BackOn img {
+	width: 100%;
+	height: auto;
+	
+}
+
+#Bass p {
+	width: 100%;
+	margin-left: -5%;
+	color: white;
+	font-size: 1.1em
+	
+}
+
+#BackOn p {
+	width: 100%;
+	margin-left: -5%;
 	color: white;
 	font-size: 1.1em;
 }
