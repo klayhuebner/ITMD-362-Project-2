@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.5;
+	background-color: #666666;
 }
 ol, ul {
 	list-style: none;
@@ -79,6 +80,20 @@ table {
 	
 }
 
+#PromoVid {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 5%;
+	height: 0;
+}
+#PromoVid iframe {
+	position: absolute;
+	top: 5%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+}
+
 @media screen and (max-width: 600px){
  #Tagline {
 	font-family: 'Dosis', sans-serif;
@@ -90,8 +105,21 @@ table {
 	background-color: black;
 	
  }	
+ 
+ #PromoVid {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 5%;
+	height: 0;
+}
+#PromoVid iframe {
+	position: absolute;
+	top: 5%;
+	left: 12.5%;
+	width: 75%;
+	height: 75%;
+}
 }
 
 
 
-@media screen and ()
