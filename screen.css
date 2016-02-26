@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -47,3 +47,51 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+#Header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666666;
+}
+
+#Header li {
+    float: left;
+	display: inline;
+}
+
+#Header img {
+	float: center;
+	padding: 10 15;
+	height: 25%;
+	width: 25%;
+}
+
+#Tagline {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 800;
+	padding: 0.5em 0 0.5em 0;
+	text-align: center;
+	font-size: 1.5em;
+	color: #ffcc33;
+	background-color: black;
+	
+}
+
+@media screen and (max-width: 600px){
+ #Tagline {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 800;
+	padding: 0.5em 0 0.5em 0;
+	text-align: center;
+	font-size: 0.8em;
+	color: #ffcc33;
+	background-color: black;
+	
+ }	
+}
+
+
+
+@media screen and ()
