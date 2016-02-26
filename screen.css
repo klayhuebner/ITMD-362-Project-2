@@ -109,7 +109,7 @@ table {
 	font-weight: 800;
 	padding: 0.75em 1em 0.75em 1em;
 	text-align: left;
-	font-size: 1.5em;
+	font-size: 2em;
 	color: #ffcc33;
 	background-color: black;
 	border-radius: 50px;
@@ -150,31 +150,45 @@ table {
 	min-height: auto;
 }
 
+.Name {
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	padding-bottom: 2.5%;
+	font-size: 1.75em;
+}
+
 #Mercer img{
-	width: 75%;
-	height: 400px;
+	width: 50%;
+	height: auto;
 }
 
 #Marisha img {
-	width: 75%;
-	height: 400px;
+	width: 50%;
+	height: auto;
 }
 
 #Solusod img {
 	width: 75%;
-	height: 400px;
+	height: auto;
 }
 
 #Mercer p {
-	width: 75%
+	width: 50%;
+	color: white;
+	font-size: 1.5em;
 }
 
 #Marisha p {
-	width: 75%;
+	width: 50%;
+	color: white;
+	font-size: 1.5em;
 }
 
 #Solusod p {
 	width: 75%;
+	color: white;
+	font-size: 1.5em;
 }
 
 
@@ -278,16 +292,30 @@ table {
 	height: auto;
 }
 
+.Name {
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	padding-top: 1em;
+	font-size: 1.25em;
+}
+
 #Mercer p {
-	width: 75%
+	width: 75%;
+	color: white;
+	font-size: 1.1em;
 }
 
 #Marisha p {
 	width: 75%;
+	color: white;
+	font-size: 1.1em;
 }
 
 #Solusod p {
 	width: 75%;
+	color: white;
+	font-size: 1.1em;
 }
 }
 
