@@ -70,38 +70,38 @@ table {
 }
 
 #Tagline {
+	top: 0;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 800;
 	padding: 0.5em 0 0.5em 0;
-	text-align: center;
 	font-size: 1.5em;
 	color: #ffcc33;
 	background-color: black;
-	
+	text-align: center;
 }
 
 #PromoVid {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 40%; 
 	padding-top: 5%;
 	height: 0;
 	overflow: hidden;
 }
 #PromoVid iframe {
 	position: absolute;
-	top: 5%;
+	top: 10%;
 	left: 25%;
 	width: 50%;
-	height: 50%;
+	height: 75%;
 	overflow: hidden;
 }
 
 #VAs {
-	position: absolute;
-	top: 95%;
+	position: relative;
+	top: 0;
 	left: 2.5%;
 	width: 95%;
-
+	overflow: clip;
 }
 
 #VAs p {
@@ -115,6 +115,68 @@ table {
 	border-radius: 50px;
 	
 }
+
+.flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: baseline;
+	padding-top: 2.5%;
+	padding-left: 10%;
+	
+}
+
+
+
+.flex div.Mercer {
+	flex: 0 1 auto;
+	align-self: center;
+	width: 25%;
+	height: auto;
+}
+
+.flex div.Marisha {
+	flex: 0 1 auto;
+	align-self: center;
+	min-width: 0;
+	min-height: auto;
+}
+
+.flex div.Solusod {
+	flex: 0 1 auto;
+	align-self: center;
+	min-width: 0;
+	min-height: auto;
+}
+
+#Mercer img{
+	width: 75%;
+	height: 400px;
+}
+
+#Marisha img {
+	width: 75%;
+	height: 400px;
+}
+
+#Solusod img {
+	width: 75%;
+	height: 400px;
+}
+
+#Mercer p {
+	width: 75%
+}
+
+#Marisha p {
+	width: 75%;
+}
+
+#Solusod p {
+	width: 75%;
+}
+
 
 @media screen and (max-width: 600px){
  #Tagline {
@@ -161,6 +223,72 @@ table {
 	color: #ffcc33;
 	background-color: black;
 	border-radius: 55px;
+ }
+ .flex {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: baseline;
+	padding-top: 2.5%;
+	padding-left: 10%;
+	
+}
+
+
+
+.flex div.Mercer {
+	flex: 0 1 auto;
+	align-self: auto;
+	width: 25%;
+	height: auto;
+}
+
+.flex div.Marisha {
+	flex: 0 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+}
+
+.flex div.Solusod {
+	flex: 0 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+}
+
+#VAimages img, p{
+	padding-left: 5%;	
+}
+
+#Mercer img{
+	
+	width: 75%;
+	height: auto;
+}
+
+#Marisha img {
+	width: 75%;
+	height: auto;
+}
+
+#Solusod img {
+	width: 75%;
+	height: auto;
+}
+
+#Mercer p {
+	width: 75%
+}
+
+#Marisha p {
+	width: 75%;
+}
+
+#Solusod p {
+	width: 75%;
+}
 }
 
 
