@@ -116,7 +116,7 @@ table {
 	
 }
 
-.flex {
+.flexVA {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -129,26 +129,27 @@ table {
 
 
 
-.flex div.Mercer {
+.flexVA div.Mercer {
 	flex: 0 1 auto;
 	align-self: center;
 	width: 25%;
 	height: auto;
 }
 
-.flex div.Marisha {
+.flexVA div.Marisha {
 	flex: 0 1 auto;
 	align-self: center;
 	min-width: 0;
 	min-height: auto;
 }
 
-.flex div.Solusod {
+.flexVA div.Solusod {
 	flex: 0 1 auto;
 	align-self: center;
 	min-width: 0;
 	min-height: auto;
 }
+
 
 .Name {
 	color: white;
@@ -191,6 +192,75 @@ table {
 	font-size: 1.5em;
 }
 
+#Music {
+	position: relative;
+	top: 0;
+	left: 2.5%;
+	padding-top: 5%;
+	width: 95%;
+	overflow: clip;
+}
+
+#Music p {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 800;
+	padding: 0.75em 1em 0.75em 1em;
+	text-align: left;
+	font-size: 2em;
+	color: #ffcc33;
+	background-color: black;
+	border-radius: 50px;
+}
+
+/*
+Placeholder
+*/
+
+#Industry {
+	position: relative;
+	top: 0;
+	left: 2.5%;
+	padding-top: 5%;
+	width: 95%;
+	overflow: clip;
+}
+
+#Industry p {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 800;
+	padding: 0.75em 1em 0.75em 1em;
+	text-align: left;
+	font-size: 2em;
+	color: #ffcc33;
+	background-color: black;
+	border-radius: 50px;
+}
+
+/*
+Placeholder
+*/
+
+#Fashion {
+	position: relative;
+	top: 0;
+	left: 2.5%;
+	padding-top: 5%;
+	width: 95%;
+	overflow: clip;
+}
+
+#Fashion p {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 800;
+	padding: 0.75em 1em 0.75em 1em;
+	text-align: left;
+	font-size: 2em;
+	color: #ffcc33;
+	background-color: black;
+	border-radius: 50px;
+}
+
+
 
 @media screen and (max-width: 600px){
  #Tagline {
@@ -220,7 +290,7 @@ table {
 
  }
  
- #VAs {
+/* #VAs {
 	position: relative;
 	top: 0;
 	left: 2.5%;
@@ -236,9 +306,9 @@ table {
 	font-size: 1.5em;
 	color: #ffcc33;
 	background-color: black;
-	border-radius: 55px;
+	border-radius: 55px;*/
  }
- .flex {
+ .flexVA {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
@@ -251,21 +321,21 @@ table {
 
 
 
-.flex div.Mercer {
+.flexVa div.Mercer {
 	flex: 0 1 auto;
 	align-self: auto;
 	width: 25%;
 	height: auto;
 }
 
-.flex div.Marisha {
+.flexVA div.Marisha {
 	flex: 0 1 auto;
 	align-self: auto;
 	min-width: 0;
 	min-height: auto;
 }
 
-.flex div.Solusod {
+.flexVA div.Solusod {
 	flex: 0 1 auto;
 	align-self: auto;
 	min-width: 0;
