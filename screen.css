@@ -255,7 +255,7 @@ table {
     padding-bottom: 2.5%;
     text-align: center;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 500;
   }
   .flexVA {
     display: -webkit-box;
@@ -299,8 +299,7 @@ table {
     padding-top: 2.5%;
     justify-content: space-around;
     align-content: center;
-    align-items: baseline;
-  }
+    }
   .flexMusic.Music {
     -webkit-box-align: stretch;
     -moz-box-align: stretch;
@@ -310,106 +309,38 @@ table {
     align-items: stretch;
 
   }
-
-  /*
-  .flexMusic {
+  .Industry {
+    margin: 5%;
+    width: auto;
+    border: 1px solid #ccc;
+  }
+  .Industry img {
+    width: 100%;
+  }
+  .Industry p {
+    color: white;
+    font-size: 1.1em;
+  }
+  .flexInd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    padding-top: 2.5%;
+    align-items: center;
     flex-flow: column nowrap;
+    padding-top: 2.5%;
     justify-content: space-around;
     align-content: center;
-    align-items: baseline;
   }
-  .flexMusic div.Bass {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .flexInd.Industry {
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
   }
-  .flexMusic div.BackOn {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-  #Bass img {
-    width: 100%;
-    height: auto;
-  }
-  #BackOn img {
-    width: 100%;
-    height: auto;
-  }
-  #Bass p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em
-  }
-  #BackOn p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-  .flex-ind {
-    display: flex;
-    padding-top: 2.5%;
-    padding-right: 15%;
-    padding-left: 15%;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: baseline;
-  }
-  .flex-ind div.Dunbar {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: center;
-  }
-  .flex-ind div.Yo {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: center;
-  }
-  .flex-ind div.Kepner {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: center;
-  }
-  #Dunbar img {
-    width: 100%;
-    height: auto;
-  }
-  #Yo img {
-    width: 100%;
-    height: auto;
-  }
-  #Kepner img {
-    width: 100%;
-    height: auto;
-  }
-  #Dunbar p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-  #Yo p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-  #Kepner p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
+/*
   .flex-fashion {
     display: flex;
     padding-top: 2.5%;
