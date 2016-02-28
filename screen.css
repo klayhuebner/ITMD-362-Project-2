@@ -239,7 +239,46 @@ table {
     width: 75%;
     height: 75%;
   }
+  .VA {
+    margin: 5%;
+    width: auto;
+    border: 1px solid #ccc;
+  }
+  .VA img {
+    width: 100%;
+  }
+  .VA p {
+    color: white;
+    font-size: 1.1em;
+  }
+  .Name {
+    padding-bottom: 2.5%;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+  }
   .flexVA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-top: 2.5%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+  }
+  .flexVA.VA {
+    -webkit-box-align: stretch;
+    -ms-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+  }
+
+  /*.flexVA {
     display: flex;
     padding-top: 2.5%;
     flex-flow: column nowrap;
@@ -442,4 +481,4 @@ table {
     color: white;
     font-size: 1.1em;
   }
-}
+}*/
