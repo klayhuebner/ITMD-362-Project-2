@@ -340,47 +340,35 @@ table {
     -moz-align-items: stretch;
     align-items: stretch;
   }
-/*
-  .flex-fashion {
+  .Fashion {
+    margin: 5%;
+    width: auto;
+    border: 1px solid #ccc;
+  }
+  .Fashion img {
+    width: 100%;
+  }
+  .Fashion p {
+    color: white;
+    font-size: 1.1em;
+  }
+  .flexFash {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    padding-top: 2.5%;
-    padding-right: 15%;
-    padding-left: 15%;
+    align-items: center;
     flex-flow: column nowrap;
+    padding-top: 2.5%;
     justify-content: space-around;
     align-content: center;
-    align-items: baseline;
   }
-  .flex-fashion div.Aoki {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .flexFash.Fashion {
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
   }
-  .flex-fashion div.Leung {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-  #Aoki img {
-    width: 100%;
-    height: auto;
-  }
-  #Leung img {
-    width: 100%;
-    height: auto;
-  }
-  #Aoki p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-  #Leung p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-}*/
+}
