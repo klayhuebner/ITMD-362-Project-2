@@ -277,70 +277,41 @@ table {
     -webkit-align-items: stretch;
     -moz-align-items: stretch;
   }
-
-  /*.flexVA {
+  .Music {
+    margin: 5%;
+    width: auto;
+    border: 1px solid #ccc;
+  }
+  .Music img {
+    width: 100%;
+  }
+  .Music p {
+    color: white;
+    font-size: 1.1em;
+  }
+  .flexMusic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    padding-top: 2.5%;
+    align-items: center;
     flex-flow: column nowrap;
+    padding-top: 2.5%;
     justify-content: space-around;
     align-content: center;
     align-items: baseline;
   }
-  .flexVa div.Mercer {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .flexMusic.Music {
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
+
   }
-  .flexVA div.Marisha {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-  .flexVA div.Solusod {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-  #VAimages img, p {
-    padding-left: 5%;
-  }
-  #Mercer img {
-    width: 75%;
-    height: auto;
-  }
-  #Marisha img {
-    width: 75%;
-    height: auto;
-  }
-  #Solusod img {
-    width: 75%;
-    height: auto;
-  }
-  .Name {
-    padding-top: 1em;
-    text-align: center;
-    text-decoration: underline;
-    color: white;
-    font-size: 1.25em;
-  }
-  #Mercer p {
-    width: 75%;
-    color: white;
-    font-size: 1.1em;
-  }
-  #Marisha p {
-    width: 75%;
-    color: white;
-    font-size: 1.1em;
-  }
-  #Solusod p {
-    width: 75%;
-    color: white;
-    font-size: 1.1em;
-  }
+
+  /*
   .flexMusic {
     display: flex;
     padding-top: 2.5%;
