@@ -99,7 +99,6 @@ table {
 .VA {
   margin: 5%;
   width: 25%;
-  border: 1px solid #ccc;
 }
 .VA img {
   width: 100%;
@@ -132,7 +131,6 @@ table {
 .Music {
   margin: 5%;
   width: 50%;
-  border: 1px solid #ccc;
 }
 .Music img {
   width: 100%;
@@ -143,14 +141,13 @@ table {
 }
 .flexMusic {
   display: -webkit-box;
-  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
 }
 .flexMusic.Music {
   -webkit-box-align: stretch;
+  -ms-box-align: stretch;
   -moz-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
@@ -160,7 +157,6 @@ table {
 .Industry {
   margin: 5%;
   width: 25%;
-  border: 1px solid #ccc;
 }
 .Industry img {
   width: 100%;
@@ -171,14 +167,13 @@ table {
 }
 .flexInd {
   display: -webkit-box;
-  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
 }
 .flexInd.Industry {
   -webkit-box-align: stretch;
+  -ms-box-align: stretch;
   -moz-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
@@ -188,7 +183,6 @@ table {
 .Fashion {
   margin: 5%;
   width: 50%;
-  border: 1px solid #ccc;
 }
 .Fashion img {
   width: 100%;
@@ -199,14 +193,13 @@ table {
 }
 .flexFash {
   display: -webkit-box;
-  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
 }
 .flexFash.Fashion {
   -webkit-box-align: stretch;
+  -ms-box-align: stretch;
   -moz-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
@@ -235,14 +228,30 @@ table {
   #PromoVid iframe {
     position: absolute;
     top: 5%;
-    left: 12.5%;
-    width: 75%;
-    height: 75%;
+    left: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .Guest {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 5%;
+  }
+  .Guest p {
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    text-align: left;
+    color: #ffcc33;
+    border-radius: 50px;
+    background-color: black;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.25em;
+    font-weight: 800;
   }
   .VA {
     margin: 5%;
     width: auto;
-    border: 1px solid #ccc;
   }
   .VA img {
     width: 100%;
@@ -267,7 +276,6 @@ table {
     padding-top: 2.5%;
     justify-content: space-around;
     align-content: center;
-    align-items: baseline;
   }
   .flexVA.VA {
     -webkit-box-align: stretch;
@@ -276,11 +284,11 @@ table {
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
     -moz-align-items: stretch;
+    align-items: stretch;
   }
   .Music {
     margin: 5%;
     width: auto;
-    border: 1px solid #ccc;
   }
   .Music img {
     width: 100%;
@@ -302,17 +310,16 @@ table {
     }
   .flexMusic.Music {
     -webkit-box-align: stretch;
+    -ms-box-align: stretch;
     -moz-box-align: stretch;
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
     -moz-align-items: stretch;
     align-items: stretch;
-
   }
   .Industry {
     margin: 5%;
     width: auto;
-    border: 1px solid #ccc;
   }
   .Industry img {
     width: 100%;
@@ -334,6 +341,7 @@ table {
   }
   .flexInd.Industry {
     -webkit-box-align: stretch;
+    -ms-box-align: stretch;
     -moz-box-align: stretch;
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
@@ -343,7 +351,6 @@ table {
   .Fashion {
     margin: 5%;
     width: auto;
-    border: 1px solid #ccc;
   }
   .Fashion img {
     width: 100%;
@@ -365,6 +372,7 @@ table {
   }
   .flexFash.Fashion {
     -webkit-box-align: stretch;
+    -ms-box-align: stretch;
     -moz-box-align: stretch;
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
