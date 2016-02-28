@@ -1,692 +1,445 @@
 /* CSS Reset
-   http://meyerweb.com/eric/tools/css/reset/ 
+   http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 body {
-	line-height: 1.5;
-	background-color: #666666;
+  background: linear-gradient(to bottom, #505050, #666666);
+	 line-height: 1.5;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
-
 #Header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #666666;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #666666;
 }
-
 #Header li {
-    float: left;
-	display: inline;
+  float: left;
 }
-
 #Header img {
-	float: left;
-	height: 25%;
-	width: 25%;
+  float: left;
+  width: 25%;
+  height: 25%;
 }
-
 #Tagline {
-	top: 0;
-	font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	padding: 0.5em 0 0.5em 0;
-	font-size: 1.5em;
-	color: #ffcc33;
-	background-color: black;
-	text-align: center;
+  top: 0;
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+  color: #ffcc33;
+  background-color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
 }
-
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 #PromoVid {
-	position: relative;
-	padding-bottom: 40%; 
-	padding-top: 5%;
-	height: 0;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-top: 5%;
+  padding-bottom: 40%;
 }
 #PromoVid iframe {
-	position: absolute;
-	top: 10%;
-	left: 25%;
-	width: 50%;
-	height: 75%;
-	overflow: hidden;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  overflow: hidden;
+  width: 50%;
+  height: 75%;
 }
-
-#VAs {
-	position: relative;
-	top: 0;
-	left: 2.5%;
-	width: 95%;
-	overflow: hidden;
+.Guest {
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
 }
-
-#VAs p {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	padding: 0.75em 1em 0.75em 1em;
-	text-align: left;
-	font-size: 1.5em;
-	color: #ffcc33;
-	background-color: black;
-	border-radius: 50px;
-	
+.Guest p {
+  padding: 0.75em 1em 0.75em 1em;
+  text-align: left;
+  color: #ffcc33;
+  border-radius: 50px;
+  background-color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
 }
-
+.VA {
+  margin: 5%;
+  width: 25%;
+  border: 1px solid #ccc;
+}
+.VA img {
+  width: 100%;
+}
+.VA p {
+  color: white;
+  font-size: 1.3em;
+}
+.Name {
+  padding-bottom: 2.5%;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
 .flexVA {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-	padding-left: 10%;	
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
-
-.flexVA div.Mercer {
-	flex: 0 1 auto;
-	align-self: center;
-	width: 25%;
-	height: auto;
+.flexVA.VA {
+  -webkit-box-align: stretch;
+  -ms-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
 }
-
-.flexVA div.Marisha {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
+.Music {
+  margin: 5%;
+  width: 50%;
+  border: 1px solid #ccc;
 }
-
-.flexVA div.Solusod {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
+.Music img {
+  width: 100%;
 }
-
-.Name {
-	color: white;
-	text-align: center;
-	text-decoration: underline;
-	padding-bottom: 2.5%;
-	font-size: 1.75em;
+.Music p {
+  color: white;
+  font-size: 1.3em;
 }
-
-#Mercer img{
-	width: 50%;
-	height: auto;
-}
-
-#Marisha img {
-	width: 50%;
-	height: auto;
-}
-
-#Solusod img {
-	width: 75%;
-	height: auto;
-}
-
-#Mercer p {
-	width: 50%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Marisha p {
-	width: 50%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Solusod p {
-	width: 75%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Music {
-	position: relative;
-	top: 0;
-	left: 2.5%;
-	padding-top: 5%;
-	width: 95%;
-	overflow: hidden;
-}
-
-#Music p {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	padding: 0.75em 1em 0.75em 1em;
-	text-align: left;
-	font-size: 1.5em;
-	color: #ffcc33;
-	background-color: black;
-	border-radius: 50px;
-}
-
 .flexMusic {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-	padding-left: 15%;
-	padding-right: 15%;	
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+.flexMusic.Music {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.Industry {
+  margin: 5%;
+  width: 25%;
+  border: 1px solid #ccc;
+}
+.Industry img {
+  width: 100%;
+}
+.Industry p {
+  color: white;
+  font-size: 1.3em;
+}
+.flexInd {
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+.flexInd.Industry {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.Fashion {
+  margin: 5%;
+  width: 50%;
+  border: 1px solid #ccc;
+}
+.Fashion img {
+  width: 100%;
+}
+.Fashion p {
+  color: white;
+  font-size: 1.3em;
+}
+.flexFash {
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+.flexFash.Fashion {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 600px) {
+  #Tagline {
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+    color: #ffcc33;
+    background-color: black;
+    font-family: 'Dosis', sans-serif;
+    font-size: 0.9em;
+    font-weight: 800;
+  }
+  #PromoVid {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    /* 16:9 */
+    padding-top: 5%;
+    padding-bottom: 56.25%;
+  }
+  #PromoVid iframe {
+    position: absolute;
+    top: 5%;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
+  }
+  .flexVA {
+    display: flex;
+    padding-top: 2.5%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+  }
+  .flexVa div.Mercer {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  .flexVA div.Marisha {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  .flexVA div.Solusod {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  #VAimages img, p {
+    padding-left: 5%;
+  }
+  #Mercer img {
+    width: 75%;
+    height: auto;
+  }
+  #Marisha img {
+    width: 75%;
+    height: auto;
+  }
+  #Solusod img {
+    width: 75%;
+    height: auto;
+  }
+  .Name {
+    padding-top: 1em;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.25em;
+  }
+  #Mercer p {
+    width: 75%;
+    color: white;
+    font-size: 1.1em;
+  }
+  #Marisha p {
+    width: 75%;
+    color: white;
+    font-size: 1.1em;
+  }
+  #Solusod p {
+    width: 75%;
+    color: white;
+    font-size: 1.1em;
+  }
+  .flexMusic {
+    display: flex;
+    padding-top: 2.5%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+  }
+  .flexMusic div.Bass {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  .flexMusic div.BackOn {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  #Bass img {
+    width: 100%;
+    height: auto;
+  }
+  #BackOn img {
+    width: 100%;
+    height: auto;
+  }
+  #Bass p {
+    width: 100%;
+    margin-left: -5%;
+    color: white;
+    font-size: 1.1em
+  }
+  #BackOn p {
+    width: 100%;
+    margin-left: -5%;
+    color: white;
+    font-size: 1.1em;
+  }
+  .flex-ind {
+    display: flex;
+    padding-top: 2.5%;
+    padding-right: 15%;
+    padding-left: 15%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+  }
+  .flex-ind div.Dunbar {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: center;
+  }
+  .flex-ind div.Yo {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: center;
+  }
+  .flex-ind div.Kepner {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: center;
+  }
+  #Dunbar img {
+    width: 100%;
+    height: auto;
+  }
+  #Yo img {
+    width: 100%;
+    height: auto;
+  }
+  #Kepner img {
+    width: 100%;
+    height: auto;
+  }
+  #Dunbar p {
+    width: 100%;
+    margin-left: -5%;
+    color: white;
+    font-size: 1.1em;
+  }
+  #Yo p {
+    width: 100%;
+    margin-left: -5%;
+    color: white;
+    font-size: 1.1em;
+  }
+  #Kepner p {
+    width: 100%;
+    margin-left: -5%;
+    color: white;
+    font-size: 1.1em;
+  }
+  .flex-fashion {
+    display: flex;
+    padding-top: 2.5%;
+    padding-right: 15%;
+    padding-left: 15%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+  }
+  .flex-fashion div.Aoki {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  .flex-fashion div.Leung {
+    min-width: 0;
+    min-height: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  #Aoki img {
+    width: 100%;
+    height: auto;
+  }
+  #Leung img {
+    width: 100%;
+    height: auto;
+  }
+  #Aoki p {
+    width: 100%;
+    margin-left: -5%;
+    color: white;
+    font-size: 1.1em;
+  }
+  #Leung p {
+    width: 100%;
+    margin-left: -5%;
+    color: white;
+    font-size: 1.1em;
+  }
 }
-
-.flexMusic div.Bass {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flexMusic div.BackOn {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-
-}
-
-#Bass img{
-	width: 85%;
-	height: auto;
-}
-
-#BackOn img {
-	width: 100%;
-	height: auto;	
-}
-
-#Bass p {
-	width: 85%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#BackOn p {
-	width: 100%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Industry {
-	position: relative;
-	top: 0;
-	left: 2.5%;
-	padding-top: 5%;
-	width: 95%;
-	overflow: hidden;
-}
-
-#Industry p {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	padding: 0.75em 1em 0.75em 1em;
-	text-align: left;
-	font-size: 1.5em;
-	color: #ffcc33;
-	background-color: black;
-	border-radius: 50px;
-}
-
-.flex-ind {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-	padding-left: 10%;
-	
-}
-
-.flex-ind div.Dunbar {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flex-ind div.Yo {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flex-ind div.Kepner {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
-}
-
-#Dunbar img{
-	width: 95%;
-	height: auto;
-}
-
-#Yo img {
-	width: 85%;
-	height: auto;
-}
-
-#Kepner img {
-	width: 62.5%;
-	height: auto;
-}
-
-#Dunbar p {
-	width: 90%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Yo p {
-	width: 85%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Kepner p {
-	width: 62.5%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Fashion {
-	position: relative;
-	top: 0;
-	left: 2.5%;
-	padding-top: 5%;
-	width: 95%;
-	overflow: clip;
-}
-
-#Fashion p {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	padding: 0.75em 1em 0.75em 1em;
-	text-align: left;
-	font-size: 1.5em;
-	color: #ffcc33;
-	background-color: black;
-	border-radius: 50px;
-}
-
-.flex-fashion {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-	padding-left: 20%;
-	padding-right: 15%;	
-}
-
-.flex-fashion div.Aoki {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flex-fashion div.Leung {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-
-}
-
-#Aoki img{
-	width: 85%;
-	height: auto;
-}
-
-#Leung img {
-	width: 75%;
-	height: auto;	
-}
-
-#Aoki p {
-	width: 85%;
-	color: white;
-	font-size: 1.5em;
-}
-
-#Leung p {
-	width: 75%;
-	color: white;
-	font-size: 1.5em;
-}
-
-
-
-@media screen and (max-width: 600px){
- #Tagline {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	padding: 0.5em 0 0.5em 0;
-	text-align: center;
-	font-size: 0.9em;
-	color: #ffcc33;
-	background-color: black;
-	
- }	
- 
- #PromoVid {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 5%;
-	height: 0;
-	overflow; hidden;
-}
-
-#PromoVid iframe {
-	position: absolute;
-	top: 5%;
-	left: 12.5%;
-	width: 75%;
-	height: 75%;
- }
-
- .flexVA {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-}
-
-.flexVa div.Mercer {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;	
-}
-
-.flexVA div.Marisha {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flexVA div.Solusod {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-}
-
-#VAimages img, p{
-	padding-left: 5%;	
-}
-
-#Mercer img{
-	
-	width: 75%;
-	height: auto;
-}
-
-#Marisha img {
-	width: 75%;
-	height: auto;
-}
-
-#Solusod img {
-	width: 75%;
-	height: auto;
-}
-
-.Name {
-	color: white;
-	text-align: center;
-	text-decoration: underline;
-	padding-top: 1em;
-	font-size: 1.25em;
-}
-
-#Mercer p {
-	width: 75%;
-	color: white;
-	font-size: 1.1em;
-}
-
-#Marisha p {
-	width: 75%;
-	color: white;
-	font-size: 1.1em;
-}
-
-#Solusod p {
-	width: 75%;
-	color: white;
-	font-size: 1.1em;
-}
-
-.flexMusic {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-	
-		
-}
-
-.flexMusic div.Bass {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;	
-}
-
-.flexMusic div.BackOn {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-
-}
-
-#Bass img{
-	width: 100%;
-	height: auto;
-}
-
-#BackOn img {
-	width: 100%;
-	height: auto;
-	
-}
-
-#Bass p {
-	width: 100%;
-	margin-left: -5%;
-	color: white;
-	font-size: 1.1em
-	
-}
-
-#BackOn p {
-	width: 100%;
-	margin-left: -5%;
-	color: white;
-	font-size: 1.1em;
-}
-
-.flex-ind {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-	padding-left: 15%;
-	padding-right: 15%;
-		
-}
-
-.flex-ind div.Dunbar {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flex-ind div.Yo {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flex-ind div.Kepner {
-	flex: 0 1 auto;
-	align-self: center;
-	min-width: 0;
-	min-height: auto;
-}
-
-#Dunbar img{
-	width: 100%;
-	height: auto;
-}
-
-#Yo img {
-	width: 100%;
-	height: auto;
-}
-
-#Kepner img {
-	width: 100%;
-	height: auto;
-}
-
-#Dunbar p {
-	width: 100%;
-	color: white;
-	font-size: 1.1em;
-	margin-left: -5%;
-}
-
-#Yo p {
-	width: 100%;
-	color: white;
-	font-size: 1.1em;
-	margin-left: -5%;
-}
-
-#Kepner p {
-	width: 100%;
-	color: white;
-	font-size: 1.1em;
-	margin-left: -5%;
-}
-
-.flex-fashion {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	align-content: center;
-	align-items: baseline;
-	padding-top: 2.5%;
-	padding-left: 15%;
-	padding-right: 15%;	
-}
-
-.flex-fashion div.Aoki {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-}
-
-.flex-fashion div.Leung {
-	flex: 0 1 auto;
-	align-self: auto;
-	min-width: 0;
-	min-height: auto;
-
-}
-
-#Aoki img{
-	width: 100%;
-	height: auto;
-}
-
-#Leung img {
-	width: 100%;
-	height: auto;
-	
-}
-
-#Aoki p {
-	width: 100%;
-	color: white;
-	font-size: 1.1em;
-	margin-left: -5%;
-}
-
-#Leung p {
-	width: 100%;
-	color: white;
-	font-size: 1.1em;
-	margin-left: -5%;
-}
-
-}
-
-
-
