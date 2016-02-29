@@ -63,7 +63,7 @@ table {
 }
 .container {
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
 }
 #PromoVid {
   position: relative;
@@ -87,7 +87,7 @@ table {
   width: 100%;
 }
 .Guest p {
-  padding: 0.75em 1em 0.75em 1em;
+  padding: 0.75em 1em;
   text-align: left;
   color: #ffcc33;
   border-radius: 50px;
@@ -95,7 +95,6 @@ table {
   font-family: 'Dosis', sans-serif;
   font-size: 1.5em;
   font-weight: 800;
-  margin: 2.5% 0;
 }
 .VA {
   margin: 5%;
@@ -188,7 +187,7 @@ table {
 }
 .Fashion img {
   width: 50%;
-  padding: 0 25%;
+  padding: 0 25%
 }
 .Fashion p {
   color: white;
@@ -209,7 +208,46 @@ table {
   -moz-align-items: stretch;
   align-items: stretch;
 }
-
+.Subscribe {
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+  padding: 2.5% 0;
+}
+.Subscribe label {
+  padding: 5% 1% 5% 7.5%;
+  text-align: left;
+  color: #ffcc33;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.Subscribe input {
+	border: 0.35em;
+  border-color: white;
+  border-style: solid;
+  background-color: transparent;
+  color: white;
+  padding: 0.75em;
+}
+.Subscribe input:focus {
+  border-radius: 1em;
+  outline: none;
+}
+.Subscribe button {
+  border: 0.35em;
+  border-color: #ffcc33;
+  border-style: solid;
+  background-color: transparent;
+  color: white;
+  padding: 0.75em;
+}
+.Subscribe button:focus {
+  border-radius: 1em;
+  outline: none;
+}
 @media screen and (max-width: 600px) {
   #Tagline {
     padding: 0.5em 0 0.5em 0;
@@ -295,6 +333,7 @@ table {
   }
   .Music img {
     width: 100%;
+    padding: 0;
   }
   .Music p {
     color: white;
@@ -305,11 +344,8 @@ table {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
     flex-flow: column nowrap;
-    padding-top: 2.5%;
-    justify-content: space-around;
-    align-content: center;
+
     }
   .flexMusic.Music {
     -webkit-box-align: stretch;
@@ -352,11 +388,11 @@ table {
     align-items: stretch;
   }
   .Fashion {
-    margin: 5%;
     width: auto;
   }
   .Fashion img {
     width: 100%;
+    padding: 0;
   }
   .Fashion p {
     color: white;
