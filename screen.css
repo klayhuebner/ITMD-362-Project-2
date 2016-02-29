@@ -95,6 +95,7 @@ table {
   font-family: 'Dosis', sans-serif;
   font-size: 1.5em;
   font-weight: 800;
+  margin: 2.5% 0;
 }
 .VA {
   margin: 5%;
@@ -133,7 +134,8 @@ table {
   width: 50%;
 }
 .Music img {
-  width: 100%;
+  width: 50%;
+  padding: 0 25%;
 }
 .Music p {
   color: white;
@@ -185,7 +187,8 @@ table {
   width: 50%;
 }
 .Fashion img {
-  width: 100%;
+  width: 50%;
+  padding: 0 25%;
 }
 .Fashion p {
   color: white;
