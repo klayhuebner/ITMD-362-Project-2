@@ -63,7 +63,7 @@ table {
 }
 .container {
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
 }
 #PromoVid {
   position: relative;
@@ -87,7 +87,7 @@ table {
   width: 100%;
 }
 .Guest p {
-  padding: 0.75em 1em 0.75em 1em;
+  padding: 0.75em 1em;
   text-align: left;
   color: #ffcc33;
   border-radius: 50px;
@@ -99,7 +99,6 @@ table {
 .VA {
   margin: 5%;
   width: 25%;
-  border: 1px solid #ccc;
 }
 .VA img {
   width: 100%;
@@ -132,10 +131,10 @@ table {
 .Music {
   margin: 5%;
   width: 50%;
-  border: 1px solid #ccc;
 }
 .Music img {
-  width: 100%;
+  width: 50%;
+  padding: 0 25%;
 }
 .Music p {
   color: white;
@@ -143,14 +142,13 @@ table {
 }
 .flexMusic {
   display: -webkit-box;
-  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
 }
 .flexMusic.Music {
   -webkit-box-align: stretch;
+  -ms-box-align: stretch;
   -moz-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
@@ -160,7 +158,6 @@ table {
 .Industry {
   margin: 5%;
   width: 25%;
-  border: 1px solid #ccc;
 }
 .Industry img {
   width: 100%;
@@ -171,14 +168,13 @@ table {
 }
 .flexInd {
   display: -webkit-box;
-  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
 }
 .flexInd.Industry {
   -webkit-box-align: stretch;
+  -ms-box-align: stretch;
   -moz-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
@@ -188,10 +184,10 @@ table {
 .Fashion {
   margin: 5%;
   width: 50%;
-  border: 1px solid #ccc;
 }
 .Fashion img {
-  width: 100%;
+  width: 50%;
+  padding: 0 25%
 }
 .Fashion p {
   color: white;
@@ -199,21 +195,59 @@ table {
 }
 .flexFash {
   display: -webkit-box;
-  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
 }
 .flexFash.Fashion {
   -webkit-box-align: stretch;
+  -ms-box-align: stretch;
   -moz-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
   align-items: stretch;
 }
-
+.Subscribe {
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+  padding: 2.5% 0;
+}
+.Subscribe label {
+  padding: 5% 1% 5% 7.5%;
+  text-align: left;
+  color: #ffcc33;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.Subscribe input {
+	border: 0.35em;
+  border-color: white;
+  border-style: solid;
+  background-color: transparent;
+  color: white;
+  padding: 0.75em;
+}
+.Subscribe input:focus {
+  border-radius: 1em;
+  outline: none;
+}
+.Subscribe button {
+  border: 0.35em;
+  border-color: #ffcc33;
+  border-style: solid;
+  background-color: transparent;
+  color: white;
+  padding: 0.75em;
+}
+.Subscribe button:focus {
+  border-radius: 1em;
+  outline: none;
+}
 @media screen and (max-width: 600px) {
   #Tagline {
     padding: 0.5em 0 0.5em 0;
@@ -235,211 +269,170 @@ table {
   #PromoVid iframe {
     position: absolute;
     top: 5%;
-    left: 12.5%;
-    width: 75%;
-    height: 75%;
+    left: auto;
+    width: 100%;
+    height: 90%;
   }
-  .flexVA {
-    display: flex;
-    padding-top: 2.5%;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: baseline;
+  .Guest {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 5%;
   }
-  .flexVa div.Mercer {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .Guest p {
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    text-align: left;
+    color: #ffcc33;
+    border-radius: 50px;
+    background-color: black;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.25em;
+    font-weight: 800;
   }
-  .flexVA div.Marisha {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .VA {
+    margin: 5%;
+    width: auto;
   }
-  .flexVA div.Solusod {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .VA img {
+    width: 100%;
   }
-  #VAimages img, p {
-    padding-left: 5%;
-  }
-  #Mercer img {
-    width: 75%;
-    height: auto;
-  }
-  #Marisha img {
-    width: 75%;
-    height: auto;
-  }
-  #Solusod img {
-    width: 75%;
-    height: auto;
+  .VA p {
+    color: white;
+    font-size: 1.1em;
   }
   .Name {
-    padding-top: 1em;
+    padding-bottom: 2.5%;
     text-align: center;
     text-decoration: underline;
-    color: white;
-    font-size: 1.25em;
+    font-weight: 500;
   }
-  #Mercer p {
-    width: 75%;
-    color: white;
-    font-size: 1.1em;
+  .flexVA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-top: 2.5%;
+    justify-content: space-around;
+    align-content: center;
   }
-  #Marisha p {
-    width: 75%;
-    color: white;
-    font-size: 1.1em;
+  .flexVA.VA {
+    -webkit-box-align: stretch;
+    -ms-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
   }
-  #Solusod p {
-    width: 75%;
+  .Music {
+    margin: 5%;
+    width: auto;
+  }
+  .Music img {
+    width: 100%;
+    padding: 0;
+  }
+  .Music p {
     color: white;
     font-size: 1.1em;
   }
   .flexMusic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    padding-top: 2.5%;
     flex-flow: column nowrap;
+
+    }
+  .flexMusic.Music {
+    -webkit-box-align: stretch;
+    -ms-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
+  }
+  .Industry {
+    margin: 5%;
+    width: auto;
+  }
+  .Industry img {
+    width: 100%;
+  }
+  .Industry p {
+    color: white;
+    font-size: 1.1em;
+  }
+  .flexInd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-top: 2.5%;
     justify-content: space-around;
     align-content: center;
-    align-items: baseline;
   }
-  .flexMusic div.Bass {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .flexInd.Industry {
+    -webkit-box-align: stretch;
+    -ms-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
   }
-  .flexMusic div.BackOn {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
+  .Fashion {
+    width: auto;
   }
-  #Bass img {
+  .Fashion img {
     width: 100%;
-    height: auto;
+    padding: 0;
   }
-  #BackOn img {
-    width: 100%;
-    height: auto;
-  }
-  #Bass p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em
-  }
-  #BackOn p {
-    width: 100%;
-    margin-left: -5%;
+  .Fashion p {
     color: white;
     font-size: 1.1em;
   }
-  .flex-ind {
+  .flexFash {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    padding-top: 2.5%;
-    padding-right: 15%;
-    padding-left: 15%;
+    align-items: center;
     flex-flow: column nowrap;
+    padding-top: 2.5%;
     justify-content: space-around;
     align-content: center;
-    align-items: baseline;
   }
-  .flex-ind div.Dunbar {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: center;
+  .flexFash.Fashion {
+    -webkit-box-align: stretch;
+    -ms-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
   }
-  .flex-ind div.Yo {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: center;
+  .Subscribe label {
+    padding: 10%;
+    text-align: center;
+    color: #ffcc33;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
   }
-  .flex-ind div.Kepner {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: center;
-  }
-  #Dunbar img {
-    width: 100%;
-    height: auto;
-  }
-  #Yo img {
-    width: 100%;
-    height: auto;
-  }
-  #Kepner img {
-    width: 100%;
-    height: auto;
-  }
-  #Dunbar p {
-    width: 100%;
-    margin-left: -5%;
+  .Subscribe input {
+  	border: 0.25em;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
     color: white;
-    font-size: 1.1em;
-  }
-  #Yo p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-  #Kepner p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-  .flex-fashion {
-    display: flex;
-    padding-top: 2.5%;
-    padding-right: 15%;
-    padding-left: 15%;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: baseline;
-  }
-  .flex-fashion div.Aoki {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-  .flex-fashion div.Leung {
-    min-width: 0;
-    min-height: auto;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-  #Aoki img {
-    width: 100%;
-    height: auto;
-  }
-  #Leung img {
-    width: 100%;
-    height: auto;
-  }
-  #Aoki p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
-  }
-  #Leung p {
-    width: 100%;
-    margin-left: -5%;
-    color: white;
-    font-size: 1.1em;
+    padding: 0.75em;
+    margin-left: 11%;
   }
 }
