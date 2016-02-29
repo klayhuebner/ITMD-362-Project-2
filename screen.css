@@ -36,6 +36,7 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
 }
+/*Logo image in top left*/
 #Header ul {
   overflow: hidden;
   margin: 0;
@@ -51,6 +52,7 @@ table {
   width: 25%;
   height: 25%;
 }
+/*flexible tag line*/
 #Tagline {
   top: 0;
   padding: 0.5em 0 0.5em 0;
@@ -61,10 +63,12 @@ table {
   font-size: 1.5em;
   font-weight: 800;
 }
+/*page canvas*/
 .container {
   width: 90%;
   margin: auto;
 }
+/*Responsive promotional video*/
 #PromoVid {
   position: relative;
   overflow: hidden;
@@ -80,6 +84,7 @@ table {
   width: 50%;
   height: 75%;
 }
+/*Styles all the page seperators*/
 .Guest {
   position: relative;
   top: 0;
@@ -96,6 +101,8 @@ table {
   font-size: 1.5em;
   font-weight: 800;
 }
+
+/*Sets the sizing for the VA images and descriptions*/
 .VA {
   margin: 5%;
   width: 25%;
@@ -107,18 +114,21 @@ table {
   color: white;
   font-size: 1.3em;
 }
+/*Styles all the names above the images*/
 .Name {
   padding-bottom: 2.5%;
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
 }
+/*Prefixes for flex display - VAs*/
 .flexVA {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
+/*Stretch all contents to the same size*/
 .flexVA.VA {
   -webkit-box-align: stretch;
   -ms-box-align: stretch;
@@ -128,6 +138,7 @@ table {
   -moz-align-items: stretch;
   align-items: stretch;
 }
+/*Sizing and placement for music gusts*/
 .Music {
   margin: 5%;
   width: 50%;
@@ -140,6 +151,7 @@ table {
   color: white;
   font-size: 1.3em;
 }
+/*Prefixes*/
 .flexMusic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +167,7 @@ table {
   -moz-align-items: stretch;
   align-items: stretch;
 }
+/*Placement of VA images*/
 .Industry {
   margin: 5%;
   width: 25%;
@@ -166,6 +179,7 @@ table {
   color: white;
   font-size: 1.3em;
 }
+/*Prefixes*/
 .flexInd {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,6 +195,8 @@ table {
   -moz-align-items: stretch;
   align-items: stretch;
 }
+
+/*Fashion placement*/
 .Fashion {
   margin: 5%;
   width: 50%;
@@ -193,6 +209,7 @@ table {
   color: white;
   font-size: 1.3em;
 }
+/*Prefixes*/
 .flexFash {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +225,7 @@ table {
   -moz-align-items: stretch;
   align-items: stretch;
 }
+/*Subscribe placement*/
 .Subscribe {
   position: relative;
   top: 0;
@@ -216,6 +234,7 @@ table {
   background-color: black;
   padding: 2.5% 0;
 }
+/*Style for the text*/
 .Subscribe label {
   padding: 5% 1% 5% 7.5%;
   text-align: left;
@@ -236,6 +255,7 @@ table {
   border-radius: 1em;
   outline: none;
 }
+/*Style for the submit button*/
 .Subscribe button {
   border: 0.35em;
   border-color: #ffcc33;
@@ -248,7 +268,10 @@ table {
   border-radius: 1em;
   outline: none;
 }
+
+/*Media query for mobile phones*/
 @media screen and (max-width: 600px) {
+  /*Mobile Tagline*/
   #Tagline {
     padding: 0.5em 0 0.5em 0;
     text-align: center;
@@ -258,11 +281,11 @@ table {
     font-size: 0.9em;
     font-weight: 800;
   }
+  /*Mobile video*/
   #PromoVid {
     position: relative;
     overflow: hidden;
     height: 0;
-    /* 16:9 */
     padding-top: 5%;
     padding-bottom: 56.25%;
   }
@@ -273,6 +296,7 @@ table {
     width: 100%;
     height: 90%;
   }
+  /*Mobile seperators*/
   .Guest {
     position: relative;
     top: 0;
@@ -290,6 +314,7 @@ table {
     font-size: 1.25em;
     font-weight: 800;
   }
+  /*Mobile VA styles*/
   .VA {
     margin: 5%;
     width: auto;
@@ -301,12 +326,14 @@ table {
     color: white;
     font-size: 1.1em;
   }
+  /*Styles names on mobile*/
   .Name {
     padding-bottom: 2.5%;
     text-align: center;
     text-decoration: underline;
     font-weight: 500;
   }
+  /*VA columns on mobile*/
   .flexVA {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -327,6 +354,7 @@ table {
     -moz-align-items: stretch;
     align-items: stretch;
   }
+  /*Mobile music placement*/
   .Music {
     margin: 5%;
     width: auto;
@@ -356,6 +384,7 @@ table {
     -moz-align-items: stretch;
     align-items: stretch;
   }
+  /*Mobile Industry placement*/
   .Industry {
     margin: 5%;
     width: auto;
@@ -387,6 +416,8 @@ table {
     -moz-align-items: stretch;
     align-items: stretch;
   }
+
+  /*Mobile Fashion layout*/
   .Fashion {
     width: auto;
   }
@@ -418,6 +449,7 @@ table {
     -moz-align-items: stretch;
     align-items: stretch;
   }
+  /*Mobile form layout*/
   .Subscribe label {
     padding: 10%;
     text-align: center;
