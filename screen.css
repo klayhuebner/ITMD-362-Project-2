@@ -418,4 +418,21 @@ table {
     -moz-align-items: stretch;
     align-items: stretch;
   }
+  .Subscribe label {
+    padding: 5% 1% 5% 7.5%;
+    text-align: center;
+    color: #ffcc33;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  .Subscribe input {
+  	border: 0.25em;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+    padding: 0.75em;
+    margin-left: 5%;
+  }
 }
