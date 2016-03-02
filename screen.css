@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 body {
-  background: linear-gradient(to bottom, #505050, #666666);
+  background:linear-gradient(135deg, #044B7F, #00A5CF);
 	 line-height: 1.5;
 }
 ol, ul {
@@ -42,7 +42,6 @@ table {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background-color: #666666;
 }
 #Header li {
   float: left;
@@ -58,7 +57,7 @@ table {
   padding: 0.5em 0 0.5em 0;
   text-align: center;
   color: #ffcc33;
-  background-color: black;
+  background-color: #11151C;
   font-family: 'Dosis', sans-serif;
   font-size: 1.5em;
   font-weight: 800;
@@ -66,7 +65,7 @@ table {
 /*page canvas*/
 .container {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 /*Responsive promotional video*/
 #PromoVid {
@@ -96,10 +95,11 @@ table {
   text-align: left;
   color: #ffcc33;
   border-radius: 50px;
-  background-color: black;
+  background-color: #11151C;
   font-family: 'Dosis', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 800;
+  text-shadow: -0.025em -0.025em #ccc;
 }
 
 /*Sets the sizing for the VA images and descriptions*/
@@ -111,7 +111,7 @@ table {
   width: 100%;
 }
 .VA p {
-  color: white;
+  color: #FDFDFF;
   font-size: 1.3em;
 }
 /*Styles all the names above the images*/
@@ -148,7 +148,7 @@ table {
   padding: 0 25%;
 }
 .Music p {
-  color: white;
+  color: #FDFDFF;
   font-size: 1.3em;
 }
 /*Prefixes*/
@@ -176,7 +176,7 @@ table {
   width: 100%;
 }
 .Industry p {
-  color: white;
+  color: #FDFDFF;
   font-size: 1.3em;
 }
 /*Prefixes*/
@@ -206,7 +206,7 @@ table {
   padding: 0 25%
 }
 .Fashion p {
-  color: white;
+  color: #FDFDFF;
   font-size: 1.3em;
 }
 /*Prefixes*/
